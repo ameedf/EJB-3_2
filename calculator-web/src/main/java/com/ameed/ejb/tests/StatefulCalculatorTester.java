@@ -16,7 +16,7 @@ public class StatefulCalculatorTester {
 	
 	@Path("/test")
 	@GET
-	public void test() throws NamingException {
+	public String test() throws NamingException {
 		Random random = new Random();
 		for (int i = 0; i < 300; i++) {
 			int a = random.nextInt(100);
@@ -25,5 +25,6 @@ public class StatefulCalculatorTester {
 			int newResult = calculator.getResult();
 			System.out.println(a + " + " + oldResult + " = " + newResult);
 		}
+		return "OK";
 	}
 }
