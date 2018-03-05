@@ -6,7 +6,7 @@
 
 	<persistence-unit name="my-pu">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<class>com.ameed.jpa.entities.Course</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ameed" />
